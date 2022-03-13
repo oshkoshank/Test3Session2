@@ -1,32 +1,44 @@
-/* Write a program to find the index of a substring of a string.
-void input_string(char *a);
-int str_reverse(char *string, char *substring);
-void output(char *string, char *substring, int index); */
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
-int string_length(char *s)
+
+void input();
+int count();
+void output();
+
+int main()
 {
-  int i;
-  for(i=0;s[i]!='\0';i++);
-  return i;
+  char a;
+  input(&a);
+  int res = count(&a);
+  output(&a,res);
+  return 0;
 }
 
-int string_ncmp(char *s1,char *s2)
+void input(char *a)
 {
-  for(int i=0; i<n && s1[i]==s2[i] && s1[i] != '\0';i++);
-  return s1[i] - s2[i];
+  size_t size = 50;
+  a = (char*)malloc(size);
+  char **b = &a;
+  printf("Enter the sentence \n");
+  size_t c = getline(b,&size,stdin);
 }
 
-
-int string_index(char *s, char *subs)
+int count(char *a)
 {
-  int l1=string_lenght(s);
-  int l2=string_lenght(subs);
-  if l1 < l2
-      return -1;
-  for(int i=0;i<l1-l2;i++)
-    if (string_nscmp(s,subs))
-      return i;
-  return -1;
+  int res=0;
+  char* token = strtok(a, " ");
+  while (token != NULL) 
+  {
+    res++;
+    token = strtok(NULL, " ");
+  }
+
+  return res;
 }
 
-/* Understand and debug the functions and write main */
+void output(char *a, int res)
+{
+  printf("The number of words in %s is %d",a,res);
+}
