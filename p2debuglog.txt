@@ -1,1 +1,584 @@
+(gdb) b main
+Breakpoint 1 at 0x722: file p2final.c, line 14.
+(gdb) r
+Starting program: /home/runner/Test3Session2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
 
+Breakpoint 1, main () at p2final.c:14
+14      frac f1 = input_fraction();
+(gdb) s
+input_fraction () at p2final.c:24
+24  {
+(gdb) n
+26      printf("Enter the numerator of the fraction: ");
+(gdb) n
+27      scanf("%d",&f.num);
+(gdb) n
+Enter the numerator of the fraction: 2
+28      printf("Enter the denominator of the  fraction: ");
+(gdb) n
+29      scanf("%d",&f.den);
+(gdb) n
+Enter the denominator of the  fraction: 4
+31      return f;
+(gdb) n
+32  }
+(gdb) n
+main () at p2final.c:15
+15      frac f2 = input_fraction();
+(gdb) s
+input_fraction () at p2final.c:24
+24  {
+(gdb) n
+26      printf("Enter the numerator of the fraction: ");
+(gdb) n
+27      scanf("%d",&f.num);
+(gdb) n
+Enter the numerator of the fraction: 2
+28      printf("Enter the denominator of the  fraction: ");
+(gdb) n
+29      scanf("%d",&f.den);
+(gdb) n
+Enter the denominator of the  fraction: 5
+31      return f;
+(gdb) n
+32  }
+(gdb) n
+main () at p2final.c:16
+16      frac f3 = input_fraction();
+(gdb) s
+input_fraction () at p2final.c:24
+24  {
+(gdb) n
+26      printf("Enter the numerator of the fraction: ");
+(gdb) n
+27      scanf("%d",&f.num);
+(gdb) 
+Enter the numerator of the fraction: 5
+28      printf("Enter the denominator of the  fraction: ");
+(gdb) n
+29      scanf("%d",&f.den);
+(gdb) n
+Enter the denominator of the  fraction: 6
+31      return f;
+(gdb) n
+32  }
+(gdb) n
+main () at p2final.c:18
+18      largest = Largest_fraction(f1,f2,f3);
+(gdb) s
+Largest_fraction (f1=..., f2=..., f3=...) at p2final.c:37
+37      larg.num = ( (f1.num*f2.den*f3.den) + (f2.num*f1.den*f3.den) + (f3.num*f1.den*f2.den));
+(gdb) n
+38      larg.den = f1.den*f2.den*f3.den;
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+44              gcd = i;
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+44              gcd = i;
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+44              gcd = i;
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) n
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) n
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+42          if(larg.num%i==0 && larg.den%i==0)
+(gdb) 
+40      for(int i = 2; i<=larg.num && i<=larg.den; ++i)
+(gdb) 
+47      larg.num = larg.num/gcd;
+(gdb) 
+48      larg.den = larg.den/gcd; 
+(gdb) 
+49      return larg;
+(gdb) n
+50  }
+(gdb) n
+main () at p2final.c:19
+19      output(f1,f2,f3,largest);
+(gdb) s
+output (f1=..., f2=..., f3=..., larg=...) at p2final.c:54
+54      printf("The sum of %d/%d + %d/%d + %d/%d is %d/%d ",f1.num,f1.den,f2.num,f2.den,f3.num,f3.den,larg.num,larg.den);
+(gdb) n
+55  }(gdb) 
+main () at p2final.c:20
+20      return 0;
+(gdb) n
+21  }
+(gdb) n
+__libc_start_main (main=0x55992b00071a <main>, argc=1, argv=0x7ffd160149d8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7ffd160149c8) at ../csu/libc-start.c:344
+344 ../csu/libc-start.c: No such file or directory.
+(gdb) n
+The sum of 2/4 + 2/5 + 5/6 is 26/15 

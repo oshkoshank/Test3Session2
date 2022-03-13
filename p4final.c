@@ -42,6 +42,7 @@ void input_coefficients(int n, float a[n])
     }
 }
 
+//Mistake made here check once again............
 float evaluate_polynomial(int n, float a[n], float x)
 {
   float result;
