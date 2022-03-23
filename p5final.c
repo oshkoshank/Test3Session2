@@ -38,7 +38,7 @@ int greatest(int n, int a[n])
     for(int i = 0; i < n; i++)
     {
       {
-        if(a[i]>a[0])
+        if(a[0]<a[i])
         {
             index = i;
         }
